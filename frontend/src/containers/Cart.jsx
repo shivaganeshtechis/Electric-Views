@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import CartItem from "../components/Common/CartItem";
-import { fetchCarts } from "../reducks/cart/operations";
+import { fetchCarts } from "../reducks/carts/operations";
 import { fetchItems } from "../reducks/items/operations";
-import { getCarts } from "../reducks/cart/selectors";
+import { getCarts } from "../reducks/carts/selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { getUser } from "../reducks/users/selectors";
 import { getItems } from "../reducks/items/selectors";
@@ -18,7 +18,7 @@ const Cart = () => {
     dispatch(fetchItems());
     dispatch(fetchCarts());
   }, []);
-  
+
   return (
     <>
       <div class="box">
@@ -31,7 +31,11 @@ const Cart = () => {
             items &&
               carts.map((cart) => (
                 <li>
-                  <CartItem cart={cart.item} key={cart.item.id} quantity = {cart.quantity} />
+                  <CartItem
+                    cart={cart.item}
+                    key={cart.item.id}
+                    quantity={cart.quantity}
+                  />
                 </li>
               )))
           }
