@@ -86,7 +86,7 @@ export default class API {
   // ///////////////////////////////////////
 
   getItems = async () => {
-    let url = "/items";
+    let url = "/items/";
     const items = await api
       .get(url)
       .then((response) => {
@@ -104,7 +104,7 @@ export default class API {
 
   getCarts = async () => {
     const carts = await api
-      .get("carts/")
+      .get("/carts/")
       .then((response) => {
         return response.data;
       })
