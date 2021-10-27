@@ -1,5 +1,5 @@
 body {
-  background-color: #FAEDCD;
+  background-color: #faedcd;
   margin: 0;
   padding: 0;
 }
@@ -12,14 +12,14 @@ body {
 .header-box {
   width: 100%;
   height: 50px;
-  background-color: #FAEDCD;
+  background-color: #faedcd;
   display: flex;
   justify-content: space-between;
 }
 
 .electric {
   font-family: mentalist;
-  color: #BA8046;
+  color: #ba8046;
   font-size: 35px;
 }
 
@@ -34,13 +34,56 @@ body {
   margin-left: 15px;
   margin-top: 5px;
 }
+.header-box a {
+  text-decoration: none;
+}
+header .header-links {
+  display: flex;
+  width: 15%;
+  font-size: 1.2em;
+  padding: 15px;
+}
 
+header .header-links p {
+  padding: 0;
+  margin: 0;
+}
+
+header .header-links .sign-in-link {
+  padding: 5px 20px;
+  font-family: Roboto;
+}
+
+header .header-links .sign-in-link a {
+  color: #495050;
+  cursor: pointer;
+}
+
+header .header-links .sign-in-link .logout {
+  color: #495050;
+  cursor: pointer;
+}
+
+header .header-links .img img {
+  width: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 900px) {
+  header .header-links {
+    width: 35%;
+  }
+  header .header-links .sign-in-link {
+    padding: 5px 15px;
+  }
+}
 .sign-in {
   justify-content: flex-end;
   margin-right: 15px;
   padding: 10px;
   font-family: Roboto;
-  color: #BA8046;
+  color: #ba8046;
   font-size: 25px;
 }
 
@@ -57,8 +100,32 @@ body {
   margin-bottom: 0;
 }
 
+.main-visual .main-catch {
+  top: 175px;
+  position: absolute;
+  color: white;
+  left: 72px;
+  font-size: 17px;
+  margin: 0;
+}
+
+.main-visual .main-catch .text-1 {
+  font-family: Futura;
+  font-weight: bold;
+  width: 63%;
+  font-size: 43px;
+  margin: 0;
+}
+
+.main-visual .main-catch .text-2 {
+  font-family: Comfortaa;
+  font-weight: medium;
+  margin: 0;
+  font-size: 30px;
+}
+
 .content {
-  background-color: #FAEDCD;
+  background-color: #faedcd;
   font-family: Roboto;
   margin-top: 0;
   width: 100%;
@@ -88,7 +155,7 @@ ul.items li .info {
 ul.items li .info .name {
   font-weight: bold;
   font-size: 20px;
-  color: #BA8046;
+  color: #ba8046;
 }
 
 ul.items li .info .name-bottom {
@@ -112,25 +179,25 @@ ul.items li .info .info-bottom {
 ul.items li .info .info-bottom .price {
   padding-top: 5px;
   font-size: 20px;
-  color: #BA8046;
+  color: #ba8046;
   font-weight: lighter;
 }
 
 ul.items li .info .info-bottom .add {
-  border: 1px solid #BA8046;
+  border: 1px solid #ba8046;
   font-size: 20px;
   padding: 5px 25px;
   cursor: pointer;
-  background-color: #BA8046;
-  color: #FFFFFF;
+  background-color: #ba8046;
+  color: #ffffff;
 }
 
 ul.items li .info .info-bottom .number {
-  border: 1px solid #BA8046;
+  border: 1px solid #ba8046;
   font-size: 20px;
   padding: 5px 15px;
-  color: #E4E4E4;
-  background-color: #BA8046;
+  color: #e4e4e4;
+  background-color: #ba8046;
 }
 
 ul.items li .info .info-bottom .number .plus,
@@ -148,11 +215,10 @@ ul.items li .info .info-bottom .number .minus {
 @media screen and (max-width: 500px) {
   .content {
     padding: 0px 0px 100px 0px;
-   
   }
   .main-visual img {
     height: 250px;
-}
+  }
 
   ul.items {
     padding: 0;
@@ -184,14 +250,14 @@ ul.items li .info .info-bottom .number .minus {
     font-size: 14px;
     padding: 0px 15px;
     line-height: 24px;
-    background-color: #BA8046;
+    background-color: #ba8046;
   }
 
   ul.items li .info .info-bottom .number {
     font-size: 14px;
     padding: 0px 5px;
     line-height: 24px;
-    color: #E4E4E4;
+    color: #e4e4e4;
     background-color: #2861cb;
   }
 }
@@ -211,7 +277,7 @@ footer {
 
 footer .subtotal {
   font-family: Roboto;
-  color: #BA8046;
+  color: #ba8046;
   font-size: 20px;
   line-height: 50px;
   font-weight: bold;
@@ -220,8 +286,8 @@ footer .subtotal {
 footer button {
   margin-right: 20px;
   margin-left: 20px;
-  background-color: #BA8046;
-  color: #FFFFFF;
+  background-color: #ba8046;
+  color: #ffffff;
   border: 0;
   padding: 15px 25px;
   font-size: 15px;
@@ -251,18 +317,26 @@ footer button {
 
 .popup h5 {
   font-size: 30px;
-  color: #FFFFFF;
+  color: #ba8046;
   font-family: Roboto;
   text-align: center;
 }
 
 .popup .popup-inner .popup-preview {
   position: absolute;
-  top: 20%;
   left: 30%;
   width: 40%;
-  background-color: #495050;
-  border: 2px solid #495050;
+  background-color: #fefae0;
+  border: 2px solid #707070;
+}
+@media screen and (max-width: 500px) {
+  .popup .popup-inner .popup-preview {
+    position: absolute;
+    left: 5%;
+    width: 90%;
+    background-color: #fefae0;
+    border: 2px solid #707070;
+  }
 }
 
 .popup .popup-inner .popup-preview .close {
@@ -278,16 +352,16 @@ footer button {
     width: 76%;
     padding: 0 4%;
   }
-
 }
 
 .popup input {
+  background-color: #d4a373;
   width: 90%;
   margin-bottom: 20px;
   margin-top: 10px;
   height: 50px;
   margin-left: 20px;
-} 
+}
 
 .inputtxt {
   width: 87%;
@@ -295,10 +369,10 @@ footer button {
 }
 
 .button {
-  background-color: #2861cb;
+  background-color: #ba8046;
   font-family: Roboto;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   width: 90%;
   margin-bottom: 20px;
   margin-top: 10px;
@@ -308,22 +382,22 @@ footer button {
 }
 
 .box {
-  margin-top: 0%;
+  margin-top: 5%;
   width: 100%;
   height: 120px;
-  background-color: #BA8046;
+  background-color: #ba8046;
   position: relative;
 }
 
 .box p {
   font-family: Roboto;
-  color: #BA8046;
+  color: #ffffff;
   font-size: 30px;
   text-align: center;
-  margin-top: 0px;
+  margin: 0 auto;
   position: absolute;
   top: 40px;
-  left: 40%;
+  /* left: 5%; */
 }
 
 .details {
@@ -331,30 +405,46 @@ footer button {
   margin: 0 auto;
 }
 
+.details .box2 table {
+  color: #ba8046;
+  border-collapse: collapse;
+}
+.details .box2 .border {
+  border-top: 1px solid #ba8046;
+}
+
+.details .box2 tr,
+td {
+  padding-right: 78px;
+  padding-left: 1px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
 .details h3 {
   font-family: Roboto;
-  color: #BA8046;
+  color: #ba8046;
   font-size: 25px;
   font-weight: bolder;
 }
 
 .details h4 {
   font-family: Roboto;
-  color: #BA8046;
+  color: #ba8046;
   font-size: 20px;
   font-weight: normal;
 }
 
 .details p {
   font-family: Roboto;
-  color: #BA8046;
+  color: #ba8046;
   font-size: 15px;
   font-weight: normal;
 }
 
 .details .total p {
   font-family: Roboto;
-  color: #BA8046;
+  color: #ba8046;
   font-size: 18px;
   font-weight: bold;
 }
@@ -378,7 +468,7 @@ footer button {
 
 .details .form {
   font-family: Roboto;
-  color: #BA8046;
+  color: #ba8046;
   font-size: 18px;
   font-weight: normal;
 }
@@ -387,10 +477,11 @@ footer button {
   width: 40%;
   height: 20px;
   margin-bottom: 15px;
+  background-color: #ba8046;
 }
 
-.details .submit button{
-  background-color: #BA8046;
+.details .submit button {
+  background-color: #ba8046;
   color: #ffffff;
   margin-top: 10px;
   border: 0;
@@ -404,18 +495,19 @@ footer button {
 
 @media screen and (max-width: 600px) {
   .details {
-    width: 500px;
+    width: 80%;
   }
 }
 .message p {
   font-family: Roboto;
-  color: #BA8046;
-  margin-left: 35%;
+  color: #ba8046;
+  /* padding-top: 20px; */
+  margin: 3% auto;
 }
 
 .backhome button {
-  background-color: #2861cb;
-  color: #FFFFFF;
+  background-color: #ba8046;
+  color: #ffffff;
   margin-top: 50px;
   border: 0;
   padding: 15px 25px;
@@ -424,5 +516,11 @@ footer button {
   cursor: pointer;
   width: 250px;
   height: 50px;
-  margin-left: 40%;
+  margin: 20%;
+}
+.content li {
+  list-style: none;
+}
+.content .item-image {
+  width: 100%;
 }
