@@ -31,7 +31,7 @@ git clone https://github.com/shivaganeshtechis/Electric-Views
 
 ```
 cd backend
-Python -m venv env
+python -m venv env
 (For Mac) source env/bin/activate
 (For Windows) env/Scripts\activate
 pip install -r requirements.txt
