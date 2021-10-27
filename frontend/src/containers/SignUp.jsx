@@ -3,9 +3,15 @@ import { useDispatch } from "react-redux";
 import { signUp } from "../reducks/users/operations";
 import CrossX from "../assets/img/cross.png";
 import Home from "../containers/Home";
+import { push } from "connected-react-router";
+import Melodium from "../assets/img/Melodium.svg";
 
 const SignUp = () => {
   const dispatch = useDispatch();
+
+  const closeButton = () => {
+    dispatch(push("/"));
+  };
   const [user_name, setUserName] = useState(""),
     [email, setEmail] = useState(""),
     [password, setPassword] = useState("");
@@ -31,8 +37,15 @@ const SignUp = () => {
         <div class="popup-inner">
           <div class="popup-preview">
             <div class="popup-inner">
-              <img src={CrossX} class="close" />
+              <span onClick={closeButton}>
+                <img src={CrossX} class="close" />
+              </span>
               <div class="input">
+                <div class="Melodum">
+                  <img src={Melodium} alt="" />
+                  <p class="bold">Melodum</p>
+                </div>
+                <p class="bold2">SIGN IN</p>
                 <input
                   type="email"
                   class="form-control"
@@ -63,7 +76,7 @@ const SignUp = () => {
               <button class="button" onClick={signUpButton}>
                 SIGN UP
               </button>
-              <p>
+              <p class="bottom">
                 Already a Member?{" "}
                 <a href="/signin">
                   <u>Sign In.</u>
@@ -73,14 +86,6 @@ const SignUp = () => {
           </div>
         </div>
       </section>
-
-      <footer>
-        <div class="subtotal">
-          <span class="subtotal-test">Subtotal:</span>
-          <span class="subtotal-price">$1000</span>
-        </div>
-        <button>Check Out</button>
-      </footer>
     </>
   );
 };

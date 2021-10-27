@@ -297,7 +297,7 @@ footer button {
 
 .popup {
   position: fixed;
-  background-color: rgba(250, 242, 242, 0.5);
+  background-color: rgba(212, 163, 115, 0.6);
   top: 0;
   left: 0px;
   right: 0;
@@ -324,10 +324,12 @@ footer button {
 
 .popup .popup-inner .popup-preview {
   position: absolute;
-  left: 30%;
-  width: 40%;
+  left: 35%;
+  width: 30%;
   background-color: #fefae0;
-  border: 2px solid #707070;
+  border-radius: 3%;
+  margin-top: 15%;
+  height: 50%;
 }
 @media screen and (max-width: 500px) {
   .popup .popup-inner .popup-preview {
@@ -343,7 +345,32 @@ footer button {
   position: absolute;
   width: 27px;
   right: 0px;
-  top: -12px;
+}
+.popup .popup-inner .popup-preview .input {
+  left: 10%;
+}
+.popup .popup-inner .popup-preview .input .Melodum {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.popup .popup-inner .popup-preview .input .Melodum img {
+  width: 10%;
+  margin-right: 3%;
+}
+.popup .popup-inner .popup-preview .input .Melodum .bold {
+  font-weight: bold;
+  font-size: 35px;
+}
+.popup .popup-inner .popup-preview .input .bold2 {
+  font-weight: bold;
+  font-size: 25px;
+  margin: 0 auto;
+  width: 24%;
+  margin-bottom: 10px;
+}
+.popup .popup-inner .popup-preview .input p {
+  color: #d4a373;
 }
 @media screen and (max-width: 500px) {
   .popup .popup-content {
@@ -355,12 +382,14 @@ footer button {
 }
 
 .popup input {
-  background-color: #d4a373;
+  background-color: rgba(212, 163, 115, 0.5);
   width: 90%;
   margin-bottom: 20px;
   margin-top: 10px;
-  height: 50px;
-  margin-left: 20px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 5%;
+  border-style: none;
 }
 
 .inputtxt {
@@ -369,7 +398,7 @@ footer button {
 }
 
 .button {
-  background-color: #ba8046;
+  background-color: rgba(186, 128, 70, 0.8);
   font-family: Roboto;
   font-weight: bold;
   color: #ffffff;
@@ -377,8 +406,14 @@ footer button {
   margin-bottom: 20px;
   margin-top: 10px;
   height: 50px;
-  margin-left: 20px;
-  border: 0px;
+  margin: 10px;
+  border-radius: 3%;
+  border-style: none;
+}
+.bottom {
+  text-align: center;
+  color: #495050;
+  text-decoration: none;
 }
 
 .box {
