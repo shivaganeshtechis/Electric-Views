@@ -6,7 +6,7 @@ import Header from "./components/Common/Header";
 import Footer from "./components/Common/Footer";
 import { getUser } from "./reducks/users/selectors";
 import { fetchUserFromLocalStorage } from "./reducks/users/operations";
-import { getSubtotal } from "./reducks/cart/selectors";
+import { getSubtotal } from "./reducks/carts/selectors";
 
 let pageUrl = window.location.toString();
 
