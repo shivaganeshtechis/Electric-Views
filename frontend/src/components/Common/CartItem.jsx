@@ -7,7 +7,7 @@ import {
 } from "../../reducks/carts/operations";
 import { getCarts, getSubtotal } from "../../reducks/carts/selectors";
 
-const CartItem = ({ cart }) => {
+const CartItem = ({ cart, quantity }) => {
   const selector = useSelector((state) => state);
   const dispatch = useDispatch();
   const carts = getCarts(selector);
@@ -19,24 +19,31 @@ const CartItem = ({ cart }) => {
   const clickMinusCart = () => {
     dispatch(decreaseCart(cart.id));
   };
+
+  useEffect(() => {
+    console.log(cart.image);
+    console.log(cart);
+    console.log(carts);
+  }, []);
+
   return (
     <>
       <div>
         <img
-          src={"http://res.cloudinary.com/techis/" + cart.item.image}
+          src={"https://res.cloudinary.com/www-techis-io/" + cart.image}
           class="item-image"
           alt=""
         />
       </div>
       <div class="info">
-        <div class="name">{cart.item.name}</div>
+        <div class="name">{cart.name}</div>
         <div class="info-bottom">
-          <div class="price">$ {cart.item.price}</div>
+          <div class="price">$ {cart.price}</div>
           <div class="number">
             <span class="minus" onClick={clickMinusCart}>
               －
             </span>
-            <span class="count">{cart.quantity}</span>
+            <span class="count">{quantity}</span>
             <span class="plus" onClick={clickPlusCart}>
               +
             </span>

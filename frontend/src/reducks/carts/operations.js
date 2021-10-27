@@ -85,7 +85,7 @@ export const decreaseCart = (cart_id) => {
       // if quantity is 0, delete
       return api
         .deleteCarts(cart_id)
-        .then((deletedCart) => {
+        .then((deletedCarts) => {
           prevCarts = prevCarts.filter((cart) => cart.id != cart_id);
           const subtotal = calculateSubtotal(prevCarts);
           dispatch(decreaseCartAction(prevCarts, subtotal));

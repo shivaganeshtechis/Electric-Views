@@ -15,16 +15,10 @@ const Cart = () => {
   const items = getItems(selector);
 
   useEffect(() => {
-    if (user.token != "") {
-      dispatch(fetchCarts(user.token));
-      console.log(carts);
-    }
-  }, [user]);
-
-  useEffect(() => {
     dispatch(fetchItems());
     dispatch(fetchCarts());
   }, []);
+  
   return (
     <>
       <div class="box">
@@ -37,7 +31,7 @@ const Cart = () => {
             items &&
               carts.map((cart) => (
                 <li>
-                  <CartItem cart={cart.item} key={cart.item.id} />
+                  <CartItem cart={cart.item} key={cart.item.id} quantity = {cart.quantity} />
                 </li>
               )))
           }

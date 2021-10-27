@@ -14,14 +14,14 @@ export default function Footer({ price }) {
   return (
     <footer>
       {key != null && (
-        <div class="footer-div">
-          <p>Subtotal: ${price}</p>
+        <div class="subtotal">
+          <span>Subtotal: ${price}</span>
           {showCheckoutButton ? (
             <a href="/cart">
               <button>Check your Cart</button>
             </a>
           ) : (
-            <a href="/checkout">
+            <a href="/Shipping">
               <button>Checkout</button>
             </a>
           )}
