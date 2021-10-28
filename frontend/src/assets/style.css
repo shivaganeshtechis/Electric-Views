@@ -79,12 +79,8 @@ header .header-links .img img {
   }
 }
 .sign-in {
-  justify-content: flex-end;
-  margin-right: 15px;
-  padding: 10px;
   font-family: Roboto;
   color: #ba8046;
-  font-size: 25px;
 }
 
 .cart-icon {
@@ -329,7 +325,7 @@ footer button {
   background-color: #fefae0;
   border-radius: 3%;
   margin-top: 15%;
-  height: 50%;
+  height: 60%;
 }
 @media screen and (max-width: 500px) {
   .popup .popup-inner .popup-preview {

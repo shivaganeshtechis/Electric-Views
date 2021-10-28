@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import ImgCover from "../../assets/img/cover.png";
+import ImageCartLogo from "../../assets/img/Dribbble-Light-Preview.png";
 
 const MainImage = () => {
+  const [checkUser, setCheckUser] = useState(false);
   return (
     <>
       <section class="main-visual">
@@ -10,6 +12,13 @@ const MainImage = () => {
           <p class="text-2">Enjoy the exceptional quality of our Products</p>
         </div>
         <img src={ImgCover} alt="" />
+        {checkUser && (
+          <p class="img">
+            <a href="/cart">
+              <img src={ImageCartLogo} alt="" />
+            </a>
+          </p>
+        )}
       </section>
     </>
   );
