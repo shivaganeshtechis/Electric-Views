@@ -436,31 +436,40 @@ footer button {
 }
 
 .details {
-  width: 50%;
+  width: 100%;
+  margin: 50px 0;
+}
+.details .product-details {
+  width: 70%;
   margin: 0 auto;
+  font-family: Roboto;
 }
 
 .details .box2 table {
-  color: #ba8046;
+  margin: 0;
+  font-size: 2em;
+  width: 100%;
+  color: #f76028;
   border-collapse: collapse;
 }
 .details .box2 .border {
   border-top: 1px solid #ba8046;
 }
 
-.details .box2 tr,
+/* .details .box2 tr,
 td {
   padding-right: 78px;
   padding-left: 1px;
   padding-top: 15px;
   padding-bottom: 10px;
-}
+} */
 
 .details h3 {
   font-family: Roboto;
   color: #ba8046;
-  font-size: 25px;
+  font-size: 4em;
   font-weight: bolder;
+  margin: 0;
 }
 
 .details h4 {
@@ -468,6 +477,7 @@ td {
   color: #ba8046;
   font-size: 20px;
   font-weight: normal;
+  margin: 20px auto;
 }
 
 .details p {
@@ -476,7 +486,28 @@ td {
   font-size: 15px;
   font-weight: normal;
 }
+.details .product-details .box2 tr {
+  height: 2em;
+}
 
+.details .product-details .box2 .td-item {
+  width: 60%;
+}
+
+.details .product-details .box2 .td-quantity {
+  width: 10%;
+}
+
+.details .product-details .box2 .td-price {
+  width: 10%;
+}
+
+.details .product-details .box2 .border {
+  border-top: 2px solid #f76028;
+  font-weight: bold;
+  color: #313636;
+  white-space: nowrap;
+}
 .details .total p {
   font-family: Roboto;
   color: #ba8046;
@@ -484,7 +515,7 @@ td {
   font-weight: bold;
 }
 
-.details .box2 .selected1 {
+/* .details .box2 .selected1 {
   display: flex;
   justify-content: space-between;
   align-content: flex-end;
@@ -499,33 +530,37 @@ td {
 .details .box2 .total {
   display: flex;
   justify-content: space-between;
+} */
+.details .dispatch {
+  width: 55%;
+  margin: 0 15%;
 }
 
-.details .form {
+.details .dispatch .form {
   font-family: Roboto;
   color: #ba8046;
   font-size: 18px;
   font-weight: normal;
 }
 
-.details .form input {
-  width: 40%;
-  height: 20px;
-  margin-bottom: 15px;
+.details .dispatch .form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0 35px;
+  font-size: 1.2em;
+  border: none;
   background-color: #ba8046;
 }
 
-.details .submit button {
+.details .submit {
   background-color: #ba8046;
   color: #ffffff;
-  margin-top: 10px;
-  border: 0;
-  padding: 15px 25px;
-  font-size: 20px;
+  width: 140px;
+  border: none;
+  font-size: 1em;
   font-family: Roboto;
   cursor: pointer;
-  width: 150px;
-  height: 50px;
 }
 
 @media screen and (max-width: 600px) {
