@@ -449,7 +449,7 @@ footer button {
   margin: 0;
   font-size: 2em;
   width: 100%;
-  color: #f76028;
+  color: #ba8046;
   border-collapse: collapse;
 }
 .details .box2 .border {
@@ -503,7 +503,7 @@ td {
 }
 
 .details .product-details .box2 .border {
-  border-top: 2px solid #f76028;
+  border-top: 2px solid #ba8046;
   font-weight: bold;
   color: #313636;
   white-space: nowrap;
