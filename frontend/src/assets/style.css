@@ -429,7 +429,7 @@ footer button {
   color: #ffffff;
   font-size: 30px;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 30%;
   position: absolute;
   top: 40px;
   /* left: 5%; */
@@ -536,8 +536,8 @@ td {
 .message p {
   font-family: Roboto;
   color: #ba8046;
-  /* padding-top: 20px; */
-  margin: 3% auto;
+  margin: 10% 30%;
+  width: 30%;
 }
 
 .backhome button {
@@ -551,11 +551,16 @@ td {
   cursor: pointer;
   width: 250px;
   height: 50px;
-  margin: 20%;
+  margin: 0 35%;
 }
 .content li {
   list-style: none;
 }
 .content .item-image {
   width: 100%;
+}
+
+.message .color {
+  font-weight: bold;
+  color: black;
 }
