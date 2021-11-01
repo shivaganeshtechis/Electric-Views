@@ -5,7 +5,7 @@ from rest_framework.response import Response
 from rest_framework.renderers import JSONRenderer
 from ..users.mixins import CustomLoginRequiredMixin
 from .models import OrderItem, Order
-from apps.cart.models import Cart
+from apps.carts.models import Cart
 from .serializers import OrderSerializer
 from django.core import serializers
 from .forms import OrderForm, OrderItemForm
@@ -15,6 +15,10 @@ import json
 class OrderAdd(CustomLoginRequiredMixin, generics.CreateAPIView):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
+
+    def get(self, request, *args, **kwargs):
+        self.queryset = Cart.objects.order_by('-created_at').filter(user=request.login_user)
+        return self.list(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         # Save to order

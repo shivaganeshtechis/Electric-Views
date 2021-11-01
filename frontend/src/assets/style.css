@@ -108,7 +108,7 @@ header .header-links .img img {
 .main-visual .main-catch .text-1 {
   font-family: Futura;
   font-weight: bold;
-  width: 63%;
+  width: 100%;
   font-size: 43px;
   margin: 0;
 }
@@ -215,7 +215,14 @@ ul.items li .info .info-bottom .number .minus {
   .main-visual img {
     height: 250px;
   }
-
+  .main-visual .main-catch {
+    top: 54px;
+    position: absolute;
+    color: white;
+    left: 1px;
+    font-size: 17px;
+    margin: 0 2% 0 2%;
+  }
   ul.items {
     padding: 0;
   }

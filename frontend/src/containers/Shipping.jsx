@@ -3,6 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import API from "../API";
 import { getCarts, getSubtotal } from "../reducks/carts/selectors";
 import { fetchCarts } from "../reducks/carts/operations";
+import { addOrder } from "../reducks/order/operations";
+import { push } from "connected-react-router";
 const api = new API();
 
 const Shipping = () => {
@@ -78,8 +80,9 @@ const Shipping = () => {
       country: "US",
       telephone: phone,
     };
-    api.orderAdd(params).then(window.location.replace("order-confirmation"));
+    dispatch(addOrder(params));
     e.preventDefault();
+    dispatch(push("order-confirmation"));
   };
 
   return (

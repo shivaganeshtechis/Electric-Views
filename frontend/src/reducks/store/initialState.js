@@ -16,14 +16,8 @@ const initialState = {
     subtotal: 0,
   },
   order: {
-    total_price: 0,
-    full_name: "",
-    phone: "",
-    address: "",
-    pin: "",
-    apt: "",
-    city: "",
-    state: "",
+    list: [],
+    subtotal: 0,
   },
 };
 
