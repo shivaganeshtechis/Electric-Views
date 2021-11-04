@@ -438,6 +438,19 @@ footer button {
   /* left: 5%; */
 }
 
+@media screen and (max-width: 400px) {
+  .box p {
+    font-family: Roboto;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 15%;
+    position: absolute;
+    top: 40px;
+    /* left: 5%; */
+  }
+}
+
 .details {
   width: 100%;
   margin: 50px 0;
@@ -577,7 +590,14 @@ td {
   margin: 10% 30%;
   width: 30%;
 }
-
+@media screen and (max-width: 400px) {
+  .message p {
+    font-family: Roboto;
+    color: #ba8046;
+    margin: 10% 20%;
+    width: 63%;
+  }
+}
 .backhome button {
   background-color: #ba8046;
   color: #ffffff;
@@ -590,6 +610,11 @@ td {
   width: 250px;
   height: 50px;
   margin: 0 35%;
+}
+@media screen and (max-width: 400px) {
+  .backhome button {
+    margin: 0 63px;
+  }
 }
 .content li {
   list-style: none;
